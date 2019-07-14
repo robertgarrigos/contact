@@ -19,7 +19,7 @@ class ContactServiceProvider extends ServiceProvider
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
-        if (! class_exists('contacts')) {
+        if (! class_exists('CreateContactsTable')) {
             $this->publishes([
                 __DIR__ . '/../database/migrations/create_contacts_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_contacts_table.php'),
             ], 'contact-migrations');
