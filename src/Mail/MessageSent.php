@@ -5,7 +5,6 @@ namespace Robertgarrigos\Contact\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class MessageSent extends Mailable
 {
@@ -14,7 +13,6 @@ class MessageSent extends Mailable
     public $name;
     public $email;
     public $text;
-
 
     /**
      * Create a new message instance.
