@@ -16,8 +16,6 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "5.8.*",
         "mews/captcha": "~2.0"
     },
     "require-dev": {
@@ -26,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Robertgarrigos\\Contact\\": "src"
+            "Robertgarrigos\\Contact\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Robertgarrigos\\Contact\\Tests\\": "tests"
+            "Robertgarrigos\\Contact\\Tests\\": "tests/"
         }
     },
     "config": {
