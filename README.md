@@ -41,8 +41,7 @@ If you want to publish just some of these files you can run `php artisan vendor:
 #### Publish just the migration file using.
 
 ```
-php 
-artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServiceProvider --tag=contact-migration
+php artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServiceProvider --tag=contact-migration
 ```
 
 **You must at least publish de migration file before running the artisan migration command**
