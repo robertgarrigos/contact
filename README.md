@@ -1,4 +1,4 @@
-# Very short description of the package
+# Contact form laravel package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/robertgarrigos/contact.svg?style=flat-square)](https://packagist.org/packages/robertgarrigos/contact)
 [![Build Status](https://img.shields.io/travis/robertgarrigos/contact/master.svg?style=flat-square)](https://travis-ci.org/robertgarrigos/contact)
