@@ -3,7 +3,7 @@
 namespace Robertgarrigos\Contact\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Robertgarrigos\Contact\Models\Contact;
