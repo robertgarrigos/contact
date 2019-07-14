@@ -2,16 +2,15 @@
 
 namespace Robertgarrigos\Contact\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
-use Robertgarrigos\Contact\Mail\MessageSent;
 use Robertgarrigos\Contact\Models\Contact;
+use Robertgarrigos\Contact\Mail\MessageSent;
 
 class ContactController extends Controller
 {
-
     public function index()
     {
         return view('contact::contact');
@@ -19,7 +18,6 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-
         $attributes = $this->validateContact();
 
         $name = $attributes['name'];
@@ -41,7 +39,6 @@ class ContactController extends Controller
 
             return Redirect::back()->withErrors(['email' => __('contact.email_not_valid')]);
         }
-
     }
 
     public function validateContact()
@@ -53,5 +50,4 @@ class ContactController extends Controller
             'captcha' => 'required|captcha',
         ]);
     }
-
 }
