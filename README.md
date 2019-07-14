@@ -4,6 +4,7 @@
 [![Build Status](https://img.shields.io/travis/robertgarrigos/contact/master.svg?style=flat-square)](https://travis-ci.org/robertgarrigos/contact)
 [![Quality Score](https://img.shields.io/scrutinizer/g/robertgarrigos/contact.svg?style=flat-square)](https://scrutinizer-ci.com/g/robertgarrigos/contact)
 [![Total Downloads](https://img.shields.io/packagist/dt/robertgarrigos/contact.svg?style=flat-square)](https://packagist.org/packages/robertgarrigos/contact)
+[![StyleCI](https://github.styleci.io/repos/196822853/shield?branch=master)](https://github.styleci.io/repos/196822853)
 
 This is a laravel package to provide a contact form for your laravel site. The form uses bulma css (https://bulma.io/), a captcha (https://github.com/mewebstudio/captcha), markdown to form the email, is language aware and saves each form submition details in the database.
 
