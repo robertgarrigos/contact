@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Contact form package routes
+ * Contact form package routes.
  */
-
 Route::get('contact', function () {
     return view('contact::contact');
 });
