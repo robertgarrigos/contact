@@ -54,6 +54,10 @@ php artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServicePro
 
 Point your browser at `yoursite.com/contact`.
 
+Every time a user submits a contact form, you will receive an email to the address set on `config/contact.php`. Of course, you need to set the smtp credentials on your .env file.
+
+Also, every submission will add an entry to the database. There is no backend to access that data for now.
+
 ## Tests
 
 Still struggling with the orchestra test bench package. I hope I'll be able to add some tests soon.
@@ -69,6 +73,10 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ## Security
 
 If you discover any security related issues, please email robert@garrigos.cat instead of using the issue tracker.
+
+## TODO
+* Add some tests.
+* Add a backend to access contact data in the database.
 
 ## Credits
 
