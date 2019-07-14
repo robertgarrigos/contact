@@ -1,0 +1,46 @@
+{
+    "name": "robertgarrigos/contact",
+    "description": "Contact form laravel package based on bulma and a captcha",
+    "keywords": [
+        "robertgarrigos",
+        "contact"
+    ],
+    "homepage": "https://github.com/robertgarrigos/contact",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Robert Garrigos",
+            "email": "robert@garrigos.cat",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*",
+        "mews/captcha": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Robertgarrigos\\Contact\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Robertgarrigos\\Contact\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Robertgarrigos\\Contact\\ContactServiceProvider"
+            ]
+        }
+    }
+}
