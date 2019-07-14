@@ -51,12 +51,15 @@ artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServiceProvide
 
 `php artisan migrate`
 
-
 ## Usage
 
 Point your browser at `yoursite.com/contact`.
 
-### Changelog
+## Tests
+
+Still struggling with the orchestra test bench package. I hope I'll be able to add some tests soon.
+
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
@@ -64,7 +67,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-### Security
+## Security
 
 If you discover any security related issues, please email robert@garrigos.cat instead of using the issue tracker.
 
