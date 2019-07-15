@@ -19,4 +19,5 @@ checks:
         excluded_dependencies:
             - laravel/framework
             - mews/captcha
-        
+            - orchestra/testbench
+            
