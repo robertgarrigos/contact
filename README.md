@@ -1,4 +1,4 @@
-# Very short description of the package
+# Contact form laravel package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/robertgarrigos/contact.svg?style=flat-square)](https://packagist.org/packages/robertgarrigos/contact)
 [![Build Status](https://img.shields.io/travis/robertgarrigos/contact/master.svg?style=flat-square)](https://travis-ci.org/robertgarrigos/contact)
@@ -41,8 +41,7 @@ If you want to publish just some of these files you can run `php artisan vendor:
 #### Publish just the migration file using.
 
 ```
-php 
-artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServiceProvider --tag=contact-migration
+php artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServiceProvider --tag=contact-migration
 ```
 
 **You must at least publish de migration file before running the artisan migration command**
@@ -51,12 +50,19 @@ artisan vendor:publish --provider=Robertgarrigos\\Contact\\ContactServiceProvide
 
 `php artisan migrate`
 
-
 ## Usage
 
 Point your browser at `yoursite.com/contact`.
 
-### Changelog
+Every time a user submits a contact form, you will receive an email to the address set on `config/contact.php`. Of course, you need to set the smtp credentials on your .env file.
+
+Also, every submission will add an entry to the database. There is no backend to access that data for now.
+
+## Tests
+
+Still struggling with the orchestra test bench package. I hope I'll be able to add some tests soon.
+
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
@@ -64,9 +70,13 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-### Security
+## Security
 
 If you discover any security related issues, please email robert@garrigos.cat instead of using the issue tracker.
+
+## TODO
+* Add some tests.
+* Add a backend to access contact data in the database.
 
 ## Credits
 
