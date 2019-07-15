@@ -20,4 +20,5 @@ checks:
             - laravel/framework
             - mews/captcha
             - orchestra/testbench
+            - intervention/image
             
