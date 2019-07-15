@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
-use Robertgarrigos\Contact\Mail\MessageSent;
 use Robertgarrigos\Contact\Models\Contact;
+use Robertgarrigos\Contact\Mail\MessageSent;
 
 class ContactController extends Controller
 {
